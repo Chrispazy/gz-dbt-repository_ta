@@ -60,3 +60,5 @@ sources:
            - name: ship_cost
              description: shipping cost paid by Greenweez to the carrier/logistics provider
 
+models:
+  - name: 
