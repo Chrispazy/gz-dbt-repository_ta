@@ -81,8 +81,8 @@ models:
     description: blabla
     columns:
       - name: orders_id
-        description: blabla
-        tests:
-           - unique:
-              column_name: "( products_id || '-' || orders_id )"
-          
+        description: primary key
+    tests:
+      - unique:
+          column_name: "( products_id || '-' || orders_id )"
+        
