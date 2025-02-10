@@ -59,3 +59,29 @@ sources:
              description: the cost of preparing the parcel in the distribution centre/warehouse
            - name: ship_cost
              description: shipping cost paid by Greenweez to the carrier/logistics provider
+
+models:
+  - name: int_orders_margin
+    description: bla bla
+    columns:
+      - name: orders_id
+        description: blabla
+        tests:
+          - unique
+
+  - name: int_orders_operational
+    description: blabla
+    columns:
+      - name: orders_id
+        description: blabla
+        tests:
+          - unique
+          
+  - name: int_sales_margin
+    description: blabla
+    columns:
+      - name: orders_id
+        description: blabla
+        tests:
+          - unique
+          
