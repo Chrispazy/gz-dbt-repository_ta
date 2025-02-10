@@ -83,5 +83,6 @@ models:
       - name: orders_id
         description: blabla
         tests:
-          - unique
+           - unique:
+              column_name: "(orders_id || '-' || pdt_id)"
           
