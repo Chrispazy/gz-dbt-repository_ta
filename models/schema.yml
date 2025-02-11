@@ -60,6 +60,50 @@ sources:
            - name: ship_cost
              description: shipping cost paid by Greenweez to the carrier/logistics provider
 
+       - name: adwords
+         identifier: raw_gz_adwords
+         description: /
+         columns:
+           - name: date_date
+             description: /
+           - name: camPGN_name
+         tests:
+           - unique:
+              columns_name: "(date_date || '-' || camPGN_name )"
+
+       - name: bing
+         identifier: raw_gz_bing
+         description: /
+         columns:
+           - name: date_date
+             description: /
+           - name: camPGN_name
+         tests:
+           - unique:
+              columns_name: "(date_date || '-' || camPGN_name )"
+
+       - name: criteo
+         identifier: raw_gz_criteo
+         description: /
+         columns:
+           - name: date_date
+             description: /
+           - name: camPGN_name
+         tests:
+           - unique:
+              columns_name: "(date_date || '-' || camPGN_name )"
+
+       - name: facebook
+         identifier: raw_gz_facebook
+         description: /
+         columns:
+           - name: date_date
+             description: /
+           - name: camPGN_name
+         tests:
+           - unique:
+              columns_name: "(date_date || '-' || camPGN_name )"
+
 models:
  - name: int_orders_margin
    description: margin calculation per order
