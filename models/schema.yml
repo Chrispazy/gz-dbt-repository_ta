@@ -205,3 +205,35 @@ models:
       description: the cost of preparing the parcel in the distribution centre/warehouse
     - name: ship_cost
       description: shipping cost paid by Greenweez to the carrier/logistics provider
+
+ - name: int_campaigns
+   description: /
+   columns:
+    - name: date_date
+      description: /
+      tests:
+        - not_null
+    - name: paid_source
+      description: /
+      tests:
+        - not_null
+    - name: campaign_key
+      description: /
+      tests:
+        - not_null            
+    - name: campaign_name
+      description: /
+      tests:
+        - not_null
+    - name: ads_cost
+      description: /
+      tests:
+        - not_null
+    - name: impression
+      description: /
+      tests:
+        - not_null
+    - name: click
+      description: /
+      tests:
+        - not_null
