@@ -69,7 +69,7 @@ sources:
            - name: camPGN_name
          tests:
            - unique:
-              columns_name: "(date_date || '-' || camPGN_name )"
+              column_name: "(date_date || '-' || camPGN_name )"
 
        - name: bing
          identifier: raw_gz_bing
@@ -80,7 +80,7 @@ sources:
            - name: camPGN_name
          tests:
            - unique:
-              columns_name: "(date_date || '-' || camPGN_name )"
+              column_name: "(date_date || '-' || camPGN_name )"
 
        - name: criteo
          identifier: raw_gz_criteo
@@ -91,7 +91,7 @@ sources:
            - name: camPGN_name
          tests:
            - unique:
-              columns_name: "(date_date || '-' || camPGN_name )"
+              column_name: "(date_date || '-' || camPGN_name )"
 
        - name: facebook
          identifier: raw_gz_facebook
@@ -102,7 +102,7 @@ sources:
            - name: camPGN_name
          tests:
            - unique:
-              columns_name: "(date_date || '-' || camPGN_name )"
+              column_name: "(date_date || '-' || camPGN_name )"
 
 models:
  - name: int_orders_margin
