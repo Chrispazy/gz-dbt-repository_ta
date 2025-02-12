@@ -2,6 +2,7 @@ SELECT
     products_id,
     date_date,
     orders_id,
+    {{ margin_percent('revenue','purchase_price','quantity') }},
     revenue,
     quantity,
     purchase_price,
